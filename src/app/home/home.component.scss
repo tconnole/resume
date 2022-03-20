@@ -1,9 +1,45 @@
 .home-container {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    height: 3000px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    height: 1000px;
     overflow: hidden;
-    background-color: white;
-    border-radius: 1vw;
+    padding-top: 20px;
+
+    .header {
+        // todo 
+    }
+
+    .skill {
+        width: 90%;
+    }
+
+    .label {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .label::before {
+        content: '';
+        border-bottom-left-radius: 10px;
+        display: block;
+        height: 4px;
+        width: 20vw;
+        max-width: 250px;
+        background-color: black;
+    }
+
+    .label::after {
+        content: '';
+        display: block;
+        height: 4px;
+        width: 20vw;
+        max-width: 250px;
+        background-color: black;
+        border-top-right-radius: 10px;
+    }
 }

@@ -1,3 +1,23 @@
 <div class="home-container">
-    <h2>.</h2>
+    <!-- about -->
+    <div>about</div>
+
+    <!-- Skill -->
+    <h2 class="label">Front End</h2>
+    <div class="skill" *ngFor="let skill of fSkills">
+        <app-skill-meter [skill]="skill"></app-skill-meter>
+    </div>
+
+    <h2 class="label">Back End</h2>
+    <div class="skill" *ngFor="let skill of bSkills">
+        <app-skill-meter [skill]="skill"></app-skill-meter>
+    </div>
+
+    <h2 class="label">Other Skills</h2>
+    <div class="skill" *ngFor="let skill of otherSkills">
+        <app-skill-meter [skill]="skill"></app-skill-meter>
+    </div>
+
+    <!-- hobbies -->
+    <div>hobbies!</div>
 </div>
