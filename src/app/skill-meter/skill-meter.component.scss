@@ -5,6 +5,7 @@
     width: 100%;
     .label {
         font-weight: bold;
+        color: white;
     }
 
     .meter-container {
@@ -14,9 +15,8 @@
         overflow: hidden;
 
         .background {
-            // opacity: 0.1;
             background-color: rgb(179, 179, 179);
-            box-shadow: inset 2px 2px 5px grey;
+            box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.603);
         }
 
         .meter-animation {
@@ -38,7 +38,7 @@
 
         .meter {
             height: 15px;
-            box-shadow: 0px 0px 8px black;
+            box-shadow: 1px 0px 5px black;
         }
     }
 

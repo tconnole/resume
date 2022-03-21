@@ -13,19 +13,28 @@
 
         .header-label {
             font-weight: bold;
-            background: linear-gradient(120deg, rgb(57, 62, 134), rgb(179, 97, 182));
+            background: linear-gradient(120deg, rgb(80, 87, 187), rgb(208, 74, 212));
             background-clip: text;
             color: transparent;
-            width: 150px;
+            width: 100px;
         }
+    }
+
+    .text-block {
+        width: 90%;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: larger;
+    }
+
+    .text-block:last-child {
+        padding-bottom: 30px;
     }
 
     .header::after {
         content: '';
         display: block;
         height: 5px;
-        // background-color: rgb(57, 62, 134);
-        background: linear-gradient(to right, rgb(57, 62, 134), rgb(179, 97, 182));
+        background: linear-gradient(to right, rgb(57, 62, 134), rgb(153, 53, 156));
         width: 100%;
         border-radius: 3px;
     }
@@ -43,15 +52,20 @@
             flex-direction: row;
             align-items: center;
             gap: 10px;
-            color: rgb(57, 62, 134);
+
+            // Text CSS
             font-weight: bold;
             font-size: 20px;
+            background: linear-gradient(120deg, rgb(80, 87, 187), rgb(208, 74, 212));
+            background-clip: text;
+            color: transparent;
+            width: 150px;
         }
         .label-decoration {
-            width: 8px;
-            height: 8px;
-            border-top: 4px solid black;
-            border-right: 4px solid black;
+            width: 6px;
+            height: 6px;
+            border-top: 4px solid rgb(197, 197, 197);
+            border-right: 4px solid rgb(197, 197, 197);
             transform: rotate(45deg);
         }
     }
@@ -62,11 +76,11 @@
         flex-direction: column;
         gap: 30px;
         align-items: center;
-        background-color: rgb(226, 226, 226);
+        background-color: rgba(85, 85, 85, 0.301);
         padding-top: 20px;
         padding-bottom: 20px;
         border-radius: 10px;
-        box-shadow: inset 1px 1px 5px rgb(88, 88, 88);
+        box-shadow: inset 1px 1px 3px rgb(0, 0, 0);
     }
 
     .hobbies {

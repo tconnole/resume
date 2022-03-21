@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
       label: 'Angular / NGRX',
       skillLevel: '95%',
       skillDesc: '',
-      color: '#ff0000'
+      color: '#ba392b'
     });
 
     // Add Typescript
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
       label: 'Python',
       skillLevel: '75%',
       skillDesc: '',
-      color: '#F8cb00'
+      color: '#dec133'
     });
 
     // CSS
@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
       label: 'CSS / HTML',
       skillLevel: '95%',
       skillDesc: '', // 'I think I\'m pretty good at CSS, but you can always be better!',
-      color: '#7800D3'
+      color: '#6a269e'
     });
   }
 
@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
       label: 'Java',
       skillLevel: '70%',
       skillDesc: '',
-      color: '#C62e2e'
+      color: '#cf215b'
     });
 
     // Add java
@@ -66,7 +66,7 @@ export class HomeComponent implements OnInit {
       label: 'SQL',
       skillLevel: '40%',
       skillDesc: '',
-      color: '#008a0c'
+      color: '#316b36'
     });
   }
 
@@ -82,14 +82,14 @@ export class HomeComponent implements OnInit {
       label: 'Linux',
       skillLevel: '75%',
       skillDesc: '',
-      color: '#A55000'
+      color: '#9e3416'
     });
 
     this.otherSkills.push({
       label: 'Cypress / Selenium',
       skillLevel: '75%',
       skillDesc: '',
-      color: '#03a9fc'
+      color: '#1e7575'
     });
   }
 }

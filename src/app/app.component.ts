@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,7 @@ import { NavigationEnd } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public alien = Math.floor(Math.random() * 20) % 20 === 0;
   title = 'resume-app';
 
   public navigate(event: any) {
