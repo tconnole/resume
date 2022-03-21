@@ -1,24 +1,52 @@
 <div class="home-container">
     <!-- about -->
-    <h1>About Me</h1>
+    <div class="header">
+        <h1 class="header-label">About</h1>
+    </div>
 
     <!-- Skill -->
-    <h1>Skills</h1>
-    <h2 class="label">Front End</h2>
-    <div class="skill" *ngFor="let skill of fSkills">
-        <app-skill-meter [skill]="skill"></app-skill-meter>
+    <div class="header">
+        <h1 class="header-label">Skills</h1>
     </div>
 
-    <h2 class="label">Back End</h2>
-    <div class="skill" *ngFor="let skill of bSkills">
-        <app-skill-meter [skill]="skill"></app-skill-meter>
+    <!-- front-end -->
+    
+    <div class="label-container">
+        <div class="label">
+        <div class="label-decoration"></div>
+            Front End
+        </div>
     </div>
-
-    <h2 class="label">Other Skills</h2>
-    <div class="skill" *ngFor="let skill of otherSkills">
-        <app-skill-meter [skill]="skill"></app-skill-meter>
+    <div class="skill-group-container">
+        <div class="skill" *ngFor="let skill of fSkills">
+            <app-skill-meter [skill]="skill"></app-skill-meter>
+        </div>
+    </div>  
+    
+    <!-- back-end -->
+    <div class="label-container">
+        <div class="label">
+        <div class="label-decoration"></div>
+            Back End
+        </div>
     </div>
-
+    <div class="skill-group-container">
+        <div class="skill" *ngFor="let skill of bSkills">
+            <app-skill-meter [skill]="skill"></app-skill-meter>
+        </div>
+    </div>
+    <!-- other -->
+    <div class="label-container">
+        <div class="label">
+        <div class="label-decoration"></div>
+            Other Skills
+        </div>
+    </div>
+    <div class="skill-group-container">
+        <div class="skill" *ngFor="let skill of otherSkills">
+            <app-skill-meter [skill]="skill"></app-skill-meter>
+        </div>
+    </div>
     <!-- hobbies -->
     <h1>hobbies!</h1>
     <div class="header">
