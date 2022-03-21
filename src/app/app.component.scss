@@ -53,8 +53,8 @@
         }
         .page {
             width: 100%;
-            background-color: rgb(230, 230, 230);
-            border-radius: 20px;
+            background-color: rgb(241, 239, 232);
+            border-radius: 10px;
             box-shadow: 2px 2px 6px black;
         }
     }
@@ -77,7 +77,8 @@
             width: 80%;
             padding-bottom: 2vh;
             .nav-sandwich {
-
+                // TODO fix this so that it is perfectly round
+                height: auto;
                 width: auto;
             }
 
@@ -91,7 +92,7 @@
             width: calc(90vw);
 
             .page {
-                border-radius: 2vw;
+                border-radius: 10px;
             }
         }
 
