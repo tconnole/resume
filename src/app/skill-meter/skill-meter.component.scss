@@ -1,0 +1,48 @@
+.skill-meter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .label {
+        font-weight: bold;
+        color: white;
+    }
+
+    .meter-container {
+        height: 15px;
+        border-radius: 8px;
+        width: 80%;
+        overflow: hidden;
+
+        .background {
+            background-color: rgb(179, 179, 179);
+            box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.603);
+        }
+
+        .meter-animation {
+            animation-timing-function: ease-out;
+            animation: grow 1.5s;
+            overflow: hidden;
+            @keyframes grow {
+                0% {
+                    width: 0%;
+                }
+                20% {
+                    width: 0%;
+                }
+                100% {
+                    width: 100%;
+                }
+            }
+        }
+
+        .meter {
+            height: 15px;
+            box-shadow: 1px 0px 5px black;
+        }
+    }
+
+    .description {
+        padding-top: 10px;
+    }
+}

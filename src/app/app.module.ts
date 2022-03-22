@@ -11,6 +11,7 @@ import { MatMenuModule} from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
+import { SkillMeterComponent } from './skill-meter/skill-meter.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ResumeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    SkillMeterComponent
   ],
   imports: [
     BrowserModule,

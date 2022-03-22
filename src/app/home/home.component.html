@@ -1,3 +1,74 @@
 <div class="home-container">
-    <h2>.</h2>
+    <!-- about -->
+    <div class="header">
+        <h1 class="header-label">About</h1>
+    </div>
+    <div class="text-block">
+        <p>
+            I'm Thomas Connole. I'm a Computer Science grad and Software Developer with
+            a focus on full stack Angular Web Applications. A majority of my background
+            revolves around JavaScript, Java, Python, with a large mix of various other
+            tools and languages.
+        </p>
+        <p>
+            I am just starting my career in the IT field, but my education and experience
+            has grown quickly. I hope to further my education and experience,
+            with more of a focus on Computer Science and Application development. 
+        </p>
+    </div>
+    <!-- Skill -->
+    <div class="header">
+        <h1 class="header-label">Skills</h1>
+    </div>
+
+    <!-- front-end -->
+    <div class="label-container">
+        <div class="label">
+        <div class="label-decoration"></div>
+            Front End
+        </div>
+    </div>
+    <div class="skill-group-container">
+        <div class="skill" *ngFor="let skill of fSkills">
+            <app-skill-meter [skill]="skill"></app-skill-meter>
+        </div>
+    </div>  
+
+    <!-- back-end -->
+    <div class="label-container">
+        <div class="label">
+        <div class="label-decoration"></div>
+            Back End
+        </div>
+    </div>
+    <div class="skill-group-container">
+        <div class="skill" *ngFor="let skill of bSkills">
+            <app-skill-meter [skill]="skill"></app-skill-meter>
+        </div>
+    </div>
+
+    <!-- other -->
+    <div class="label-container">
+        <div class="label">
+        <div class="label-decoration"></div>
+            Other Skills
+        </div>
+    </div>
+    <div class="skill-group-container">
+        <div class="skill" *ngFor="let skill of otherSkills">
+            <app-skill-meter [skill]="skill"></app-skill-meter>
+        </div>
+    </div>
+
+    <!-- hobbies -->
+    <div class="header">
+        <h1 class="header-label">Hobbies</h1>
+    </div>
+    <div class="text-block">
+        <p>
+            My hobbies include 3D printing / modeling, weight lifting,
+            tabletop, computer hardware, hunting, hiking,
+            and of course software development.
+        </p>
+    </div>
 </div>

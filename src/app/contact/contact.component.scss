@@ -1,0 +1,66 @@
+.contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+
+    .header {
+        width: 90%;
+        padding-top: 2vh;  
+    
+        .header-label {
+            font-weight: bold;
+            background: linear-gradient(120deg, rgb(80, 87, 187), rgb(208, 74, 212));
+            background-clip: text;
+            color: transparent;
+            width: 500px;
+        }
+    }
+
+    .header::after {
+        content: '';
+        display: block;
+        height: 5px;
+        background: linear-gradient(to right, rgb(57, 62, 134), rgb(153, 53, 156));
+        width: 100%;
+        border-radius: 3px;
+    }
+
+    .contact-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 100px;
+        width: 250px;
+
+        .contact-box {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 50px;
+            padding: 10px;
+        }
+    
+        a {
+            all: unset;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    
+        a:hover, a:focus {
+            background-color: rgba(143, 143, 143, 0.5);
+        }
+
+        .svg {
+            width: 18px;
+            height: 18px;
+            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 4px;
+        }
+    }
+}

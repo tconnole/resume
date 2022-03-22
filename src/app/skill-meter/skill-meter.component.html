@@ -1,0 +1,15 @@
+<div class="skill-meter-container" *ngIf="skill">
+    <!-- Label -->
+    <div class="label">{{skill.label}}</div>
+
+    <!-- Meter -->
+        <div class="meter-container" [style.backgroundColor]="skill.color">
+            <div class="background">
+                <div class="meter-animation">
+                    <div class="meter" [style.backgroundColor]="skill.color" [style.width]="skill.skillLevel"></div>
+                </div>
+            </div>
+        </div>
+    <!-- Desc -->
+    <div *ngIf="skill.skillDesc" class="description">{{skill.skillDesc}}</div>
+</div>
