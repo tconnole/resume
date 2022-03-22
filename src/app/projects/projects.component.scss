@@ -93,6 +93,8 @@
             align-items: center;
             justify-content: flex-start;
             font-size: larger;
+            flex-wrap: wrap;
+            word-break: break-all;
 
             a {
                 all: unset;
@@ -101,13 +103,10 @@
                 padding-right: 3px;
                 border-radius: 2px;
             }
-            a:hover {
-                text-decoration: underline;
-                cursor: pointer;
-            }
-            a:focus {
+            a:focus, a:hover {
                 background-color: rgba(128, 128, 240, 0.5);
                 color: black;
+                cursor: pointer;
             }
         }
     }
