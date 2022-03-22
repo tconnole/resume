@@ -34,7 +34,7 @@
 
         .name::before {
             content: '';
-            background-color: rgb(185, 185, 185);
+            background-color: rgba(185, 185, 185, 0.5);
             display: block;
             width: 10px;
             height: 45px;
@@ -100,36 +100,39 @@
         }
 
         .navigation {
-            width: 0px;
-            overflow: hidden;
+            visibility: hidden;
         }
     }
 }
 
 .alien {
-    position: absolute;
+    position: fixed;
     visibility: hidden;
 
-    animation: fly 10s, wobble 0.4s infinite alternate;
+    animation: fly 120s infinite, wobble 0.4s infinite alternate;
 
     @keyframes fly {
         from {
             visibility: visible;
             top: 40vh;
-            left: -5vw;
+            left: -10vw;
         }
-        25% {
+        3% {
             top: 30vh;
             left: 50vw;
         }
-        75% {
+        5% {
             top: 50vh;
             left: 95vw;
         }
-        to {
+        7%{
             visibility: visible;
             top: 10vh;
-            left: -5vw;
+            left: -10vw;
+        }
+        to {
+            top: 10vh;
+            left: -10vw;
         }
     }
 

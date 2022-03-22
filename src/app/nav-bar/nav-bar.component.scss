@@ -41,9 +41,9 @@ a:focus {
     }
 
     .social-icon:hover, .social-icon:focus {
+        background-color: red;
         background: linear-gradient(120deg, rgb(57, 62, 134), rgba(179, 97, 182, 0.8));
         cursor: pointer;
-        transition: background-color 0.2s;
     }
 
     .headshot {

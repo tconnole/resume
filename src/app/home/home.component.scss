@@ -9,8 +9,6 @@
 
     .header {
         width: 90%;
-        padding-top: 2vh;  
-
         .header-label {
             font-weight: bold;
             background: linear-gradient(120deg, rgb(80, 87, 187), rgb(208, 74, 212));
@@ -18,6 +16,9 @@
             color: transparent;
             width: 100px;
         }
+    }
+    .header:first-child {
+        padding-top: 2vh;
     }
 
     .text-block {
@@ -78,15 +79,8 @@
         align-items: center;
         background-color: rgba(85, 85, 85, 0.301);
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         border-radius: 10px;
         box-shadow: inset 1px 1px 3px rgb(0, 0, 0);
-    }
-
-    .hobbies {
-        width: 100%;
-        height: 200px;
-        overflow: hidden;
-        z-index: 50;
     }
 }
