@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
     this.fSkills.push({
       label: 'CSS / HTML',
       skillLevel: '95%',
-      skillDesc: '', // 'I think I\'m pretty good at CSS, but you can always be better!',
+      skillDesc: '',
       color: '#6a269e'
     });
   }
