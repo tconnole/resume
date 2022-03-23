@@ -45,31 +45,29 @@
         border-radius: 3px;
     }
 
-    .label-container {
+    .label {
         width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        background: linear-gradient(120deg, rgb(80, 87, 187), rgb(208, 74, 212));
+        background-clip: text;
+        color: transparent;
+        color: rgba(255, 255, 255, 0.2);
+    }
 
-        .label {
-            width: 80%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
-
-            // Text CSS
-            font-weight: bold;
-            font-size: 20px;
-            background: linear-gradient(120deg, rgb(80, 87, 187), rgb(208, 74, 212));
-            background-clip: text;
-            color: transparent;
-            width: 160px;
-        }
-        .label-decoration {
-            width: 6px;
-            height: 6px;
-            border-top: 4px solid rgb(197, 197, 197);
-            border-right: 4px solid rgb(197, 197, 197);
-            transform: rotate(45deg);
-        }
+    .label::before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-top: 4px solid rgb(197, 197, 197);
+        border-right: 4px solid rgb(197, 197, 197);
+        transform: rotate(45deg);
     }
 
     .project {
