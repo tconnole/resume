@@ -6,12 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  // public alien = Math.floor(Math.random() * 20) % 20 === 0;
   public alien = true;
   title = 'resume-app';
 
-  public navigate(event: any) {
-    console.log(event);
+  public splat() {
+    this.alien = false;
   }
 }
 

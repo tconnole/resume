@@ -68,6 +68,7 @@
             }
         }
     }
+
     @media (max-width: 1400px) {
         .header {
             font-size: 25px;
@@ -144,4 +145,8 @@
             transform: rotate(10deg);
         }
     }
+}
+
+.explosion {
+    animation-play-state: paused;
 }
