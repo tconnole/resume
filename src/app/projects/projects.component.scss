@@ -62,7 +62,8 @@
     .label::before {
         content: '';
         display: block;
-        border: 4px solid rgb(197, 197, 197);
+        border: 4px solid rgba(197, 197, 197, 0.4);
+        border-radius: 1px;
         transform: rotate(45deg);
     }
 
